@@ -19,6 +19,7 @@ interface WebAntdPreferencesExtension {
 export const overridesPreferences = defineOverridesPreferences({
   // overrides
   app: {
+    defaultHomePath: '/agent/chat',
     name: import.meta.env.VITE_APP_TITLE,
   },
   copyright: appCopyrightPreferences,
