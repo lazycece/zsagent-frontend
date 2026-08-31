@@ -19,7 +19,7 @@ export const MOCK_USERS: UserInfo[] = [
     realName: 'Vben',
     roles: ['super'],
     username: 'vben',
-    homePath: '/dashboard/analytics',
+    homePath: '/agent/chat',
   },
   {
     id: 1,
@@ -27,7 +27,7 @@ export const MOCK_USERS: UserInfo[] = [
     realName: 'Admin',
     roles: ['admin'],
     username: 'admin',
-    homePath: '/dashboard/analytics',
+    homePath: '/agent/chat',
   },
   {
     id: 2,
@@ -35,7 +35,7 @@ export const MOCK_USERS: UserInfo[] = [
     realName: 'Jack',
     roles: ['user'],
     username: 'jack',
-    homePath: '/dashboard/analytics',
+    homePath: '/agent/chat',
   },
 ];
 
@@ -54,29 +54,6 @@ export const MOCK_CODES = [
     // user
     codes: ['AC_1000001', 'AC_1000002'],
     username: 'jack',
-  },
-];
-
-const dashboardMenus = [
-  {
-    meta: {
-      order: -1,
-      title: 'page.dashboard.title',
-    },
-    name: 'Dashboard',
-    path: '/dashboard',
-    redirect: '/dashboard/analytics',
-    children: [
-      {
-        name: 'Analytics',
-        path: 'analytics',
-        component: '/dashboard/analytics/index',
-        meta: {
-          affixTab: true,
-          title: 'page.dashboard.analytics',
-        },
-      },
-    ],
   },
 ];
 
@@ -171,50 +148,20 @@ const createDemosMenus = (role: 'admin' | 'super' | 'user') => {
 
 export const MOCK_MENUS = [
   {
-    menus: [...dashboardMenus, ...createDemosMenus('super')],
+    menus: [...createDemosMenus('super')],
     username: 'vben',
   },
   {
-    menus: [...dashboardMenus, ...createDemosMenus('admin')],
+    menus: [...createDemosMenus('admin')],
     username: 'admin',
   },
   {
-    menus: [...dashboardMenus, ...createDemosMenus('user')],
+    menus: [...createDemosMenus('user')],
     username: 'jack',
   },
 ];
 
 export const MOCK_MENU_LIST = [
-  {
-    id: 1,
-    name: 'Dashboard',
-    status: 1,
-    type: 'catalog',
-    icon: 'lucide:layout-dashboard',
-    path: '/dashboard',
-    meta: {
-      icon: 'lucide:layout-dashboard',
-      order: -1,
-      title: 'page.dashboard.title',
-    },
-    children: [
-      {
-        id: 101,
-        pid: 1,
-        status: 1,
-        type: 'menu',
-        name: 'Analytics',
-        path: 'analytics',
-        component: '/dashboard/analytics/index',
-        meta: {
-          affixTab: true,
-          icon: 'lucide:area-chart',
-          title: 'page.dashboard.analytics',
-          keepAlive: true,
-        },
-      },
-    ],
-  },
   {
     id: 2,
     meta: {

@@ -1,9 +1,5 @@
 {
   "auth": {
     "login": "登录"
-  },
-  "dashboard": {
-    "title": "概览",
-    "analytics": "分析页"
   }
 }

@@ -1,9 +1,5 @@
 {
   "auth": {
     "login": "Login"
-  },
-  "dashboard": {
-    "title": "Dashboard",
-    "analytics": "Analytics"
   }
 }
