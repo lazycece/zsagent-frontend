@@ -1,4 +1,4 @@
-# zsagent 前端（知识库管理系统）
+# zsagent 前端
 
 基于 [Vue Vben Admin v5](https://github.com/vbenjs/vue-vben-admin)（web-antd / Ant Design Vue）裁剪的中后台前端，承载 zsagent 的智能问答与知识管理界面。
 
